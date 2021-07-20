@@ -4,9 +4,9 @@ const tail = function(words) {
 
 const assertEqual = function(actual, expected) {
   let boolean = actual === expected;
-  if(boolean){
+  if (boolean) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else if(!boolean){
+  } else if (!boolean) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
