@@ -26,24 +26,15 @@ const assertEqual = function(actual, expected) {
 
 
 const letterPositions = function(sentence) {
-  const results = {};
+  const results = {}; //An object which will receive the key value??
   
-  // logic to update results here
   for (let i = 0; i < sentence.length; i++) {
-    let positions = [];
-    let key = sentence[i];
-    positions.push(sentence.indexOf(sentence[i]));
-    
-    if (results[key]) {
-      positions.push(i);
-      results[key] = positions;
-    } else {
-      results[key] = positions;
-    }
+    let key = sentence[i]; // a letter
+    results[key] = results[key] || [];
+    results[key].push(i);
   }
   return results;
 };
-
 
 
 console.log(letterPositions('hello'));
