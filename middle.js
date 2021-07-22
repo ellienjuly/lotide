@@ -1,9 +1,9 @@
 const assertEqual = function(actual, expected) {
   let isTrue = actual === expected;
   if (isTrue) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+    return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
   } else if (!isTrue) {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+    return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`;
   }
 };
 
@@ -33,7 +33,7 @@ const middle = function(arr) {
   if (center > 1) {
     if (!Number.isInteger(center)) {
       result.push(arr[Math.ceil(center - 1)]);
-      
+
       return result;
 
     } else if (Number.isInteger(center)) {
