@@ -19,5 +19,5 @@ const countLetters = function(string) {
   return counter;
 };
 
-assertEqual(countLetters('LHL')['L'], 2);
+assertEqual(countLetters('LHLLL')['L'], 4);
 assertEqual(countLetters('LHL')['H'], 1);

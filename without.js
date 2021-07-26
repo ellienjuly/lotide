@@ -4,11 +4,12 @@ const without = function(source, itemsToRemove) {
   for (let i = 0; i < sourceCopy.length; i++) {
     for (let j = 0; j < itemsToRemove.length; j++) {
       if (sourceCopy[i] === itemsToRemove[j]) {
-        let count = 0;
-        count += 1;
+        let counter = 0;
+        counter += 1;
 
         let index = sourceCopy.indexOf(sourceCopy[i]);
-        sourceCopy.splice(index, count);
+        sourceCopy.splice(index, counter);
+
         return sourceCopy;
       }
     }
