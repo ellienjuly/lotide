@@ -21,3 +21,5 @@ const countLetters = function(string) {
 
 assertEqual(countLetters('LHLLL')['L'], 4);
 assertEqual(countLetters('LHL')['H'], 1);
+
+module.exports(countLetters);

@@ -20,3 +20,4 @@ const ab = { a: "1", b: "2", c: "1" };
 const expected = {b: "2", a: "1" };
 console.log(assertObjectsEqual(ab, expected));
 
+module.exports(assertObjectsEqual);
